@@ -1,0 +1,3291 @@
+{
+ "aspek": [
+  "Baterai",
+  "Kamera",
+  "Performa",
+  "Harga"
+ ],
+ "k_smooth": 5,
+ "min_opini": {
+  "Merek": 10,
+  "Model": 3
+ },
+ "model_sentimen": "IndoBERT",
+ "jumlah_komentar": 2951,
+ "evaluasi": [
+  {
+   "Model": "BiLSTM",
+   "Aspek": "Baterai",
+   "Akurasi": 0.9052,
+   "Macro-F1": 0.4924
+  },
+  {
+   "Model": "BiLSTM",
+   "Aspek": "Kamera",
+   "Akurasi": 0.9171,
+   "Macro-F1": 0.4692
+  },
+  {
+   "Model": "BiLSTM",
+   "Aspek": "Performa",
+   "Akurasi": 0.8799,
+   "Macro-F1": 0.33
+  },
+  {
+   "Model": "BiLSTM",
+   "Aspek": "Harga",
+   "Akurasi": 0.7817,
+   "Macro-F1": 0.5077
+  },
+  {
+   "Model": "IndoBERT",
+   "Aspek": "Baterai",
+   "Akurasi": 0.9662,
+   "Macro-F1": 0.7107
+  },
+  {
+   "Model": "IndoBERT",
+   "Aspek": "Kamera",
+   "Akurasi": 0.9679,
+   "Macro-F1": 0.6097
+  },
+  {
+   "Model": "IndoBERT",
+   "Aspek": "Performa",
+   "Akurasi": 0.9442,
+   "Macro-F1": 0.63
+  },
+  {
+   "Model": "IndoBERT",
+   "Aspek": "Harga",
+   "Akurasi": 0.9526,
+   "Macro-F1": 0.8294
+  }
+ ],
+ "produk": [
+  {
+   "nama": "Oppo",
+   "tingkat": "Merek",
+   "merek": "Oppo",
+   "total_opini": 11,
+   "aspek": {
+    "Baterai": {
+     "pos": 2,
+     "net": 1,
+     "neg": 0,
+     "n": 3,
+     "skor": 0.25,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "7-8 jutaan paling bagus oppo reno 15 sih performa kanceng kamera 3 lengkap telephoto zoom, baterai badag juga, Tapi sangat Underrated apalagi bg david malah milih siomay 17t dri ha...",
+       "video": "ybK8FRc6nlw"
+      },
+      {
+       "label": "Netral",
+       "teks": "The best battery test in the world even though I of course missed my phone the Oppo find x9 pro 😊",
+       "video": "KNdbPdZjlOU"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 1,
+     "net": 1,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.143,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "7-8 jutaan paling bagus oppo reno 15 sih performa kanceng kamera 3 lengkap telephoto zoom, baterai badag juga, Tapi sangat Underrated apalagi bg david malah milih siomay 17t dri ha...",
+       "video": "ybK8FRc6nlw"
+      },
+      {
+       "label": "Netral",
+       "teks": "mana video riview update terbaru pemakaian Oppo Reno 14 bang. tlg buatin",
+       "video": "qeWDOOfbIbI"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 2,
+     "net": 1,
+     "neg": 0,
+     "n": 3,
+     "skor": 0.25,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "kenapa gak masukin Oppo A6x di harga 1.5 - 2 juta, padahal chipset Snapdragon",
+       "video": "UOTT4xudY70"
+      },
+      {
+       "label": "Netral",
+       "teks": "gokil oppo find x9 pro charge 100% malem main ml push rank sampai 9/10x siang jam segini sisa batre masih 40an%",
+       "video": "bwF7wNZjhLE"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 1,
+     "net": 1,
+     "neg": 1,
+     "n": 3,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "7-8 jutaan paling bagus oppo reno 15 sih performa kanceng kamera 3 lengkap telephoto zoom, baterai badag juga, Tapi sangat Underrated apalagi bg david malah milih siomay 17t dri ha...",
+       "video": "ybK8FRc6nlw"
+      },
+      {
+       "label": "Negatif",
+       "teks": "Nonton ini masih pakek oppo A12. Mau ganti hp yang 7 jutaan, tapi belum ada yang nyantol di hati. Ku tunggu updatenya di tahun 2027. Semoga harganya pada turun semua",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Vivo/iQOO",
+   "tingkat": "Merek",
+   "merek": "Vivo/iQOO",
+   "total_opini": 65,
+   "aspek": {
+    "Baterai": {
+     "pos": 2,
+     "net": 3,
+     "neg": 0,
+     "n": 5,
+     "skor": 0.2,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Kalian harus sadar satu hal..jgn pernah se x x update software.\nItu sama aja hp kalian di nerf \nBiasanya setelah di update kendala muncul yg paling sering kena\n-camera jadi burik k...",
+       "video": "UOTT4xudY70"
+      },
+      {
+       "label": "Netral",
+       "teks": "And that's a worthy phone that I can use for a full day😂, because every phone I had died halfway through, even my Vivo X200 Pro 6000mAh battery. 10000mah might be enough for me whe...",
+       "video": "KNdbPdZjlOU"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 6,
+     "net": 3,
+     "neg": 2,
+     "n": 11,
+     "skor": 0.25,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Kalian harus sadar satu hal..jgn pernah se x x update software.\nItu sama aja hp kalian di nerf \nBiasanya setelah di update kendala muncul yg paling sering kena\n-camera jadi burik k...",
+       "video": "UOTT4xudY70"
+      },
+      {
+       "label": "Negatif",
+       "teks": "Perekaman vidio selfie vivo hancur total... Kayak HP 2jtaan gempa😅",
+       "video": "LRE_WGxHpGs"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 3,
+     "net": 6,
+     "neg": 1,
+     "n": 10,
+     "skor": 0.133,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Kalian harus sadar satu hal..jgn pernah se x x update software.\nItu sama aja hp kalian di nerf \nBiasanya setelah di update kendala muncul yg paling sering kena\n-camera jadi burik k...",
+       "video": "UOTT4xudY70"
+      },
+      {
+       "label": "Negatif",
+       "teks": "Minta satu bro😢, aku affiliate lemot banget Vivo y01😢... @GadgetIn",
+       "video": "J7tekVDdUhg"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 12,
+     "net": 24,
+     "neg": 3,
+     "n": 39,
+     "skor": 0.205,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Beli hp iqoo z10r bln februari,dpt 3,5jt sekarang harganya gilaa",
+       "video": "UOTT4xudY70"
+      },
+      {
+       "label": "Negatif",
+       "teks": "Hp vivo y20 saya udah 7 tahun di pakai, belum ada biaya ganti hp. Harga hp mahal² sekarang\n\n\nBagi dong hp nya kak🥺",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Motorola",
+   "tingkat": "Merek",
+   "merek": "Motorola",
+   "total_opini": 12,
+   "aspek": {
+    "Baterai": {
+     "pos": 1,
+     "net": 0,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.167,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "cuma besar layar sama batrei aja mending motorola",
+       "video": "0WTTYcWTJ4A"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 2,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "setelah ngeliat ini, jadi makin ga nyesel ngambil moto edge 60f njir wkwk. camera emg sebagus itu, cuma gabisa diharapkan sih kalo malem",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Harga": {
+     "pos": 1,
+     "net": 8,
+     "neg": 0,
+     "n": 9,
+     "skor": 0.071,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Beli motorola signature bekas reviewer di harga 9.4jt jadi serasa worth it banget 😂😂",
+       "video": "ybK8FRc6nlw"
+      },
+      {
+       "label": "Netral",
+       "teks": "Harganya brutal brutal tahun ini\nMinang moto G45 harga 1.6 5G 8/256 lagi 😊",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Infinix/Tecno",
+   "tingkat": "Merek",
+   "merek": "Infinix/Tecno",
+   "total_opini": 35,
+   "aspek": {
+    "Baterai": {
+     "pos": 1,
+     "net": 2,
+     "neg": 0,
+     "n": 3,
+     "skor": 0.125,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "punya tecno camon 50 pro 5g dicolong orang, kalau mau buat live 30 menitan yg bagus kameranya ga gampang panas kl bisa bypass charging yg mana ya?? budget under 5 jt",
+       "video": "UOTT4xudY70"
+      },
+      {
+       "label": "Netral",
+       "teks": "Tecno pova curve gak ada wireless charging bang😢",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 2,
+     "net": 1,
+     "neg": 0,
+     "n": 3,
+     "skor": 0.25,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Kk br kmren aku beli tecno camon 50 pro, kamera memang bagus tp touch screen nya knp kurang responsif, coba de kk pakai TG nya apa juga seperti itu",
+       "video": "UOTT4xudY70"
+      },
+      {
+       "label": "Netral",
+       "teks": "34:09 Mirip kek bingkai kamera Infinix Note 12.",
+       "video": "ybK8FRc6nlw"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 2,
+     "net": 2,
+     "neg": 1,
+     "n": 5,
+     "skor": 0.1,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Lah bang gw malah dapet infinix note 12 tapi enak sih buat game, tapi kadang ngedrop😂",
+       "video": "UOTT4xudY70"
+      },
+      {
+       "label": "Negatif",
+       "teks": "aku jujur ya bang David HP yang kayak infinix gitu banyak bug terus engga jelas hpnya aku nyesel buat gaming awal doang lumayan bagus lama kelamaan patah\" ngeleg pengen banting HP ...",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 3,
+     "net": 20,
+     "neg": 1,
+     "n": 24,
+     "skor": 0.069,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "di era harga hp naik gila-gilaan gini infinx dan tecno jadi penyelamat bagi kaum mendang-mending.",
+       "video": "UOTT4xudY70"
+      },
+      {
+       "label": "Negatif",
+       "teks": "Ko Infinix hot 60 pro mahal ya? Bukannya 2.3",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Xiaomi Group",
+   "tingkat": "Merek",
+   "merek": "Xiaomi Group",
+   "total_opini": 185,
+   "aspek": {
+    "Baterai": {
+     "pos": 4,
+     "net": 24,
+     "neg": 0,
+     "n": 28,
+     "skor": 0.121,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Masalahnya xiaomi 17 T gak tahan air bang dibanding yg 17 T pro dan baterai lebih kecil",
+       "video": "UOTT4xudY70"
+      },
+      {
+       "label": "Netral",
+       "teks": "tahan banting nih REDMI NOTE 14 PRO+ 5G, pemakean 1 tahun++, bh 97%😂",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 9,
+     "net": 17,
+     "neg": 1,
+     "n": 27,
+     "skor": 0.25,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Saya nonton video ini pakai Redmi Note 7, masih awet sampai sekarang 😂",
+       "video": "0WTTYcWTJ4A"
+      },
+      {
+       "label": "Negatif",
+       "teks": "sudah ketemu bug xiaomi 17T, camera lag , terutama di  selfie cam, padahal kondisi tdk overheat,😅,semoga cuma masalah software",
+       "video": "LRE_WGxHpGs"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 12,
+     "net": 23,
+     "neg": 8,
+     "n": 43,
+     "skor": 0.083,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Hp yg sedang saya pakai redmi9a ram3/32. Sungguh menderita tiap main game pasti bunyi mesin cukur😅 \nUdh 6tahun pake pengen ganti blum ke capai",
+       "video": "UOTT4xudY70"
+      },
+      {
+       "label": "Negatif",
+       "teks": "Aq pake poco x7 pro kenapa gampang panas tapi ya buat liat yt aja",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 20,
+     "net": 61,
+     "neg": 6,
+     "n": 87,
+     "skor": 0.152,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Wah poco x7 5g cuma masuk nominasi aja. Padahal 2 bulan lalu 12/512 dapet harga diskon jadi3,6jt. Pas bgt harga hp baru pada naek",
+       "video": "UOTT4xudY70"
+      },
+      {
+       "label": "Negatif",
+       "teks": "Poco x6 pro ttp rekomen si di rentan harga 3jt kecil paling mahal 3.5 udah menang banyak nambah dikit ke x7 pro di 4.3",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Apple",
+   "tingkat": "Merek",
+   "merek": "Apple",
+   "total_opini": 316,
+   "aspek": {
+    "Baterai": {
+     "pos": 24,
+     "net": 63,
+     "neg": 14,
+     "n": 101,
+     "skor": 0.094,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "pokoknya androwoit harus menang dan yang terbaik, iPhone mah gengsi doang 😹 🤡",
+       "video": "qeWDOOfbIbI"
+      },
+      {
+       "label": "Negatif",
+       "teks": "Ipad 11 sudah 8 bulan, Bh masih 100 persen. iPhone 15 basic mau mendekati satu bulan BH sudah turun 1 persen jadi 100 persen, charger pakai charger original iPad… iPhone 15 udah up...",
+       "video": "pzzRk-dun7g"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 19,
+     "net": 48,
+     "neg": 0,
+     "n": 67,
+     "skor": 0.264,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Zoom pas video iphone mulus banget😮",
+       "video": "qeWDOOfbIbI"
+      },
+      {
+       "label": "Netral",
+       "teks": "Udh liat compare vidio nya Masih bngung ip 17 basic atau 25 ultra. Blm pernh pake ip. Smsungtrs . Mau upgrade",
+       "video": "qeWDOOfbIbI"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 20,
+     "net": 18,
+     "neg": 7,
+     "n": 45,
+     "skor": 0.26,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Ios dan Android ga bisa di bandingin.. \nKlo butuh hardware kenceng pilihkan Android",
+       "video": "qeWDOOfbIbI"
+      },
+      {
+       "label": "Negatif",
+       "teks": "iPhone 15 saudaraku pake buat TLP wa 2 jam baterai lgsg kayak mau meledak panasnya. trus apa iPhone 16 jg begitu?",
+       "video": "vfp0r-lFm1k"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 19,
+     "net": 65,
+     "neg": 19,
+     "n": 103,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Di menit ke 15.30 kata bang David baut yg cari uang di perkontenan lebih suggest buat upgrade ke ip 16,, tp konten saya Blum menghasilkan bang,, viewnya sepi subscriber nya lambat,...",
+       "video": "vfp0r-lFm1k"
+      },
+      {
+       "label": "Negatif",
+       "teks": "Harga jual yang ga terlalu jatuh ya ip",
+       "video": "qeWDOOfbIbI"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Samsung",
+   "tingkat": "Merek",
+   "merek": "Samsung",
+   "total_opini": 130,
+   "aspek": {
+    "Baterai": {
+     "pos": 4,
+     "net": 10,
+     "neg": 3,
+     "n": 17,
+     "skor": 0.045,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Just Info. \nRentang Harga 6-8jt, ada Samsung S24 FE yg masih value for money. \nMeskipun sdh 2 tahunan hpnya beredar. \nTp selama saya pakai, masih aman dan enak banget untuk kameran...",
+       "video": "UOTT4xudY70"
+      },
+      {
+       "label": "Negatif",
+       "teks": "Komennya pada galau dari kemarin\" ngak beli hape. Hhhhe\nAku ngak ada niat ganti hp, ngak taunya hp lagi pada mahal tau\" baterai hp bermasalah. Ternyata aku hitung\" hape samsungku u...",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 8,
+     "net": 17,
+     "neg": 2,
+     "n": 27,
+     "skor": 0.188,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Knp yah samsung ao7 saya kameranya kureng bgt ngga jernihhh??",
+       "video": "UOTT4xudY70"
+      },
+      {
+       "label": "Negatif",
+       "teks": "Masukannya dong, samsung a32 4g tiba2 mati, kamera depan jg burem , harus service / beli baru ya?",
+       "video": "0WTTYcWTJ4A"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 15,
+     "net": 13,
+     "neg": 6,
+     "n": 34,
+     "skor": 0.231,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "4:28 gw pake S25 pake main game lumayan aga lama kaya setrikaan 😭",
+       "video": "qeWDOOfbIbI"
+      },
+      {
+       "label": "Negatif",
+       "teks": "Yang paling ngaruh kayanya panas si samsung sih, kurang tau ini dia coolingnya gimana karena ngepush compact phone kali ya.\n\nKalau samsung bisa pertahanin compactnya + suhu stabil ...",
+       "video": "qeWDOOfbIbI"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 11,
+     "net": 36,
+     "neg": 5,
+     "n": 52,
+     "skor": 0.105,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Pov Samsung a07 makin mehong tembus 2 juta lebih bahkan varian terendahnya aja, lihat aja website resmi Samsung wkwkwk",
+       "video": "UOTT4xudY70"
+      },
+      {
+       "label": "Negatif",
+       "teks": "Knp gak bandingkan yg mana paling cepat kena grenn line😅😅,jujur saya sangat kecewa sama samsung hp mahal tapi cepat kena grenn line",
+       "video": "qeWDOOfbIbI"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Honor",
+   "tingkat": "Merek",
+   "merek": "Honor",
+   "total_opini": 13,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 7,
+     "neg": 0,
+     "n": 7,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "but my honor 600 pro has a 6400 mah li-ion battery and that is for the EU region,Turkey,UK.",
+       "video": "KNdbPdZjlOU"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 3,
+     "neg": 0,
+     "n": 3,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Bang bahas honor win5 5G bang atau generasi penerus nya nanti perkiraan Oktober honor win 2 yg pake Snapdragon elite gen 6",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 3,
+     "neg": 0,
+     "n": 3,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Kelibas semua ni Hp ama Honor 200 Pro , klo lu beruntung di erafone atau honor store masi dijual dengan harga 5,5  jt udh gt masi dpt free gamepad atau speaker .  Spek google aja",
+       "video": "LRE_WGxHpGs"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Realme",
+   "tingkat": "Merek",
+   "merek": "Realme",
+   "total_opini": 10,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 1,
+     "neg": 1,
+     "n": 2,
+     "skor": -0.143,
+     "contoh": [
+      {
+       "label": "Negatif",
+       "teks": "Udah lama enggak liat harga hp.\nKarena baterai Mulai bocor.\nNiat mau beli hp baru.\nGw kira spesifikasi realme 6 tahun 2020 udah jatuh banget.\nEh tahu nya enggak jauh beda 😂😂😂😂",
+       "video": "UOTT4xudY70"
+      },
+      {
+       "label": "Netral",
+       "teks": "try to add the realme P4 POWER, it has an 10.000MHa battery test too",
+       "video": "KNdbPdZjlOU"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 2,
+     "net": 0,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.286,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Realmen16 pro plus ketinggalan bang. Terbaik kameranya.",
+       "video": "LRE_WGxHpGs"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 1,
+     "net": 0,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.167,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Kalok main cam bagus.tele bagus.ultrawide 8 mp ini kebiasaan realme biasanya.",
+       "video": "ybK8FRc6nlw"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 4,
+     "neg": 1,
+     "n": 5,
+     "skor": -0.1,
+     "contoh": [
+      {
+       "label": "Negatif",
+       "teks": "Udah lama enggak liat harga hp.\nKarena baterai Mulai bocor.\nNiat mau beli hp baru.\nGw kira spesifikasi realme 6 tahun 2020 udah jatuh banget.\nEh tahu nya enggak jauh beda 😂😂😂😂",
+       "video": "UOTT4xudY70"
+      },
+      {
+       "label": "Netral",
+       "teks": "TELAT BANG YANG 2JT GW DAH BELI REALME100I",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "iPhone 16 Plus",
+   "tingkat": "Model",
+   "merek": "Apple",
+   "total_opini": 3,
+   "aspek": {
+    "Baterai": {
+     "pos": 2,
+     "net": 0,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.286,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "adabtor yang cocok untuk si iphone 16 plus pakai yang adaptor brapa watt dan merek apa aja selain adaptor bawaan. Dan yang bikin awet batrei healt",
+       "video": "vfp0r-lFm1k"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 1,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "mending iPhone 16 Plus, 16 Pro atau 16 pro max  ? 😂 (masalah keluarin duit 20jta)",
+       "video": "vfp0r-lFm1k"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Galaxy S25 FE",
+   "tingkat": "Model",
+   "merek": "Samsung",
+   "total_opini": 14,
+   "aspek": {
+    "Baterai": {
+     "pos": 2,
+     "net": 1,
+     "neg": 0,
+     "n": 3,
+     "skor": 0.25,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Samsung s25 fe kalo ukuran layar 6.4 ato 6.5 dan batre nya 5000 - 6000 bisa lebih bagus lagi",
+       "video": "LRE_WGxHpGs"
+      },
+      {
+       "label": "Netral",
+       "teks": "Charging nya samsung mentok 25 watt?? Katanya s25 fe ini udh 45w",
+       "video": "LRE_WGxHpGs"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 1,
+     "net": 1,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.143,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Udah make S25 Fe 3 bulanan sekarang pakai V70 karena design dan kameranya mantap, Samsung lemah di baterai dan waktu ngecharge yg lama aja sih",
+       "video": "LRE_WGxHpGs"
+      },
+      {
+       "label": "Netral",
+       "teks": "S25 fe 8/256\nAmbil yg warna navy, cakep bgt 😍\n\nCuma buat sosmed doang, nggak maen game dan kamera nggak butuh² bgt\nUdah cocok bgt sama aplikasi bawaan samsung kayak galeri, file ma...",
+       "video": "LRE_WGxHpGs"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 2,
+     "net": 0,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.286,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "S25 fe 8/256\nAmbil yg warna navy, cakep bgt 😍\n\nCuma buat sosmed doang, nggak maen game dan kamera nggak butuh² bgt\nUdah cocok bgt sama aplikasi bawaan samsung kayak galeri, file ma...",
+       "video": "LRE_WGxHpGs"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 2,
+     "net": 5,
+     "neg": 0,
+     "n": 7,
+     "skor": 0.167,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "april 2026 beli S25 FE 8/256 dapet di harga 7,6 sampe sekarang puas sama HP nya",
+       "video": "ybK8FRc6nlw"
+      },
+      {
+       "label": "Netral",
+       "teks": "nunggu S25 Fe balik ke harga awal 8jt-an deh 😀",
+       "video": "LRE_WGxHpGs"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "iPhone 15 Pro",
+   "tingkat": "Model",
+   "merek": "Apple",
+   "total_opini": 6,
+   "aspek": {
+    "Baterai": {
+     "pos": 2,
+     "net": 3,
+     "neg": 0,
+     "n": 5,
+     "skor": 0.2,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "buat user baru iphone memang bh ini jadi paranoid banget, tapi kalo menurut pengalaman gw pribadi setelah bertahun tahun pake iphone, dan sekarang udh pake iphone 15 pro selama set...",
+       "video": "pzzRk-dun7g"
+      },
+      {
+       "label": "Netral",
+       "teks": "iphone 15 pro ku battery health 89%, cc 423, first use sep 2023, amsiong dah",
+       "video": "pzzRk-dun7g"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 0,
+     "neg": 1,
+     "n": 1,
+     "skor": -0.167,
+     "contoh": [
+      {
+       "label": "Negatif",
+       "teks": "namanya hp di pake gak terlalu pusing sama battery health, gw pake iphone 15 pro udah 11 bulan beli february 2024. battery health sekarang di 89% CC nya udah 420+ kalau udah gak ny...",
+       "video": "pzzRk-dun7g"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "iPhone 15 Pro Max",
+   "tingkat": "Model",
+   "merek": "Apple",
+   "total_opini": 6,
+   "aspek": {
+    "Baterai": {
+     "pos": 2,
+     "net": 3,
+     "neg": 0,
+     "n": 5,
+     "skor": 0.2,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "iphone 15 pro max penggunaan 1 tahun lebih BH 86% santai aje karna memang di gunankan juga",
+       "video": "pzzRk-dun7g"
+      },
+      {
+       "label": "Netral",
+       "teks": "Iphone 15 pm battery health 100% cc 140,pmbelian november 2023",
+       "video": "pzzRk-dun7g"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 1,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "njirrr kuat juga uang Apple untuk nyogok nyuap mulut mulut pemerintah Indonesia 😁 , udah ga percaya lagi sama pemerintah,,, , andai kalau ga nipu rakyat, uang korupsi pertamax bisa...",
+       "video": "vfp0r-lFm1k"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Galaxy S24",
+   "tingkat": "Model",
+   "merek": "Samsung",
+   "total_opini": 3,
+   "aspek": {
+    "Baterai": {
+     "pos": 1,
+     "net": 0,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.167,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Percayalah gaes jangan remehin batre. Bayangin kalian udah kerja seharian pas pulang pengen ngegame eh tapi batrenya abis pas ngecas juga lama. Ngegame ga jadi malah keburu tidur. ...",
+       "video": "LRE_WGxHpGs"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Performa": {
+     "pos": 1,
+     "net": 0,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.167,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Percayalah gaes jangan remehin batre. Bayangin kalian udah kerja seharian pas pulang pengen ngegame eh tapi batrenya abis pas ngecas juga lama. Ngegame ga jadi malah keburu tidur. ...",
+       "video": "LRE_WGxHpGs"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 1,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Alhamdulillah desember 2025 dapet new s24 basic 8jt tipis",
+       "video": "ybK8FRc6nlw"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Galaxy S24 FE",
+   "tingkat": "Model",
+   "merek": "Samsung",
+   "total_opini": 3,
+   "aspek": {
+    "Baterai": {
+     "pos": 1,
+     "net": 0,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.167,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Just Info. \nRentang Harga 6-8jt, ada Samsung S24 FE yg masih value for money. \nMeskipun sdh 2 tahunan hpnya beredar. \nTp selama saya pakai, masih aman dan enak banget untuk kameran...",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 1,
+     "net": 0,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.167,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Just Info. \nRentang Harga 6-8jt, ada Samsung S24 FE yg masih value for money. \nMeskipun sdh 2 tahunan hpnya beredar. \nTp selama saya pakai, masih aman dan enak banget untuk kameran...",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 1,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Just Info. \nRentang Harga 6-8jt, ada Samsung S24 FE yg masih value for money. \nMeskipun sdh 2 tahunan hpnya beredar. \nTp selama saya pakai, masih aman dan enak banget untuk kameran...",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Oppo Reno 15",
+   "tingkat": "Model",
+   "merek": "Oppo",
+   "total_opini": 4,
+   "aspek": {
+    "Baterai": {
+     "pos": 1,
+     "net": 0,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.167,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "7-8 jutaan paling bagus oppo reno 15 sih performa kanceng kamera 3 lengkap telephoto zoom, baterai badag juga, Tapi sangat Underrated apalagi bg david malah milih siomay 17t dri ha...",
+       "video": "ybK8FRc6nlw"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 1,
+     "net": 0,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.167,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "7-8 jutaan paling bagus oppo reno 15 sih performa kanceng kamera 3 lengkap telephoto zoom, baterai badag juga, Tapi sangat Underrated apalagi bg david malah milih siomay 17t dri ha...",
+       "video": "ybK8FRc6nlw"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 1,
+     "net": 0,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.167,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "7-8 jutaan paling bagus oppo reno 15 sih performa kanceng kamera 3 lengkap telephoto zoom, baterai badag juga, Tapi sangat Underrated apalagi bg david malah milih siomay 17t dri ha...",
+       "video": "ybK8FRc6nlw"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 1,
+     "net": 0,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.167,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "7-8 jutaan paling bagus oppo reno 15 sih performa kanceng kamera 3 lengkap telephoto zoom, baterai badag juga, Tapi sangat Underrated apalagi bg david malah milih siomay 17t dri ha...",
+       "video": "ybK8FRc6nlw"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "iPhone 12",
+   "tingkat": "Model",
+   "merek": "Apple",
+   "total_opini": 4,
+   "aspek": {
+    "Baterai": {
+     "pos": 1,
+     "net": 0,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.167,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "ku pengguna ip 12, kepikiran mau upgrade soalnya udh mulai berat dan batre jg mayan cepet abis. Ini masih pertimbangin buat beli 15 atau 17 sembari nunggu 18 keluar biar harganya m...",
+       "video": "J7tekVDdUhg"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 2,
+     "neg": 1,
+     "n": 3,
+     "skor": -0.125,
+     "contoh": [
+      {
+       "label": "Negatif",
+       "teks": "ku pengguna ip 12, kepikiran mau upgrade soalnya udh mulai berat dan batre jg mayan cepet abis. Ini masih pertimbangin buat beli 15 atau 17 sembari nunggu 18 keluar biar harganya m...",
+       "video": "J7tekVDdUhg"
+      },
+      {
+       "label": "Netral",
+       "teks": "Bang mending iPhone 12/13 pro atau gopix 8A\nAtau smartphone di range harga segitu",
+       "video": "pzzRk-dun7g"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Oppo Find X9 Pro",
+   "tingkat": "Model",
+   "merek": "Oppo",
+   "total_opini": 3,
+   "aspek": {
+    "Baterai": {
+     "pos": 1,
+     "net": 1,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.143,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "gokil oppo find x9 pro charge 100% malem main ml push rank sampai 9/10x siang jam segini sisa batre masih 40an%",
+       "video": "bwF7wNZjhLE"
+      },
+      {
+       "label": "Netral",
+       "teks": "The best battery test in the world even though I of course missed my phone the Oppo find x9 pro 😊",
+       "video": "KNdbPdZjlOU"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 1,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "gokil oppo find x9 pro charge 100% malem main ml push rank sampai 9/10x siang jam segini sisa batre masih 40an%",
+       "video": "bwF7wNZjhLE"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    }
+   }
+  },
+  {
+   "nama": "Redmi Note 7",
+   "tingkat": "Model",
+   "merek": "Xiaomi Group",
+   "total_opini": 6,
+   "aspek": {
+    "Baterai": {
+     "pos": 1,
+     "net": 1,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.143,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Redmi note 7 saya masih berjalan normal tanpa ada kendala sampai saat ini (jadi hp kedua), hanya saja kalah di baterai (sudah umur) sama tidak ada update software (android murah pa...",
+       "video": "0WTTYcWTJ4A"
+      },
+      {
+       "label": "Netral",
+       "teks": "redmi note 7 gw masih nyala masih dipake bokap sampe skarang 😂😂 baru 1x ganti baterai wkwk",
+       "video": "0WTTYcWTJ4A"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 1,
+     "net": 1,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.143,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Saya nonton video ini pakai Redmi Note 7, masih awet sampai sekarang 😂",
+       "video": "0WTTYcWTJ4A"
+      },
+      {
+       "label": "Netral",
+       "teks": "trnyata redmi note 7 yg gua pegang saat ini buat nonton video ini tidak seburuk itu wkwk",
+       "video": "0WTTYcWTJ4A"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Harga": {
+     "pos": 2,
+     "net": 0,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.286,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Redmi note 7 emng se ghaib itu, harga murah tpi spek gk ngotak, dan gw sebagai miFans ngerasa Renot 10 ke atas spek ny dah gk se gacor dulu.",
+       "video": "0WTTYcWTJ4A"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "iPhone 16 Pro",
+   "tingkat": "Model",
+   "merek": "Apple",
+   "total_opini": 9,
+   "aspek": {
+    "Baterai": {
+     "pos": 1,
+     "net": 1,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.143,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "ip16pro saya cuma dicas sekali sehari sahaja.Batterynya tahan woii😅",
+       "video": "pzzRk-dun7g"
+      },
+      {
+       "label": "Netral",
+       "teks": "Bang, untuk iphone 16 pro pakai adapter berapa watt ya? 20 atau 30 watt? Ada yg saranin untuk 16 pro pakai 30 watt, cm yg resmi adanya 20 watt saja",
+       "video": "pzzRk-dun7g"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 1,
+     "net": 6,
+     "neg": 0,
+     "n": 7,
+     "skor": 0.083,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Dari video ini sih, kelihatan banget , ga perlu iphone 16pro",
+       "video": "vfp0r-lFm1k"
+      },
+      {
+       "label": "Netral",
+       "teks": "Mas, q baru pake iphone 16 pro belum genap sebulan, saat buka foto, kemudian masuk edit foto dan mode hapus, itu kan di edit lama, ada yg dihapus intinya, gak lama sekitar 5 menit ...",
+       "video": "vfp0r-lFm1k"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    }
+   }
+  },
+  {
+   "nama": "iPhone 13",
+   "tingkat": "Model",
+   "merek": "Apple",
+   "total_opini": 22,
+   "aspek": {
+    "Baterai": {
+     "pos": 3,
+     "net": 2,
+     "neg": 3,
+     "n": 8,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Awal2 pake android spek dan harga saat itu balance skrg harga mahal tp spek biasa aja kecuali untuk flag ship udah beda cerita top semua. Nyoba2 pindah ke ip 13 dulu nyaman dan suk...",
+       "video": "UOTT4xudY70"
+      },
+      {
+       "label": "Negatif",
+       "teks": "Satu tahun ip 13 baterai health turun 3% normal kah",
+       "video": "pzzRk-dun7g"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 1,
+     "net": 1,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.143,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Kalau buat jangka panjang & hp ke 2 ip 13 inter/android harga yg setara buat game& kamera bagus",
+       "video": "J7tekVDdUhg"
+      },
+      {
+       "label": "Netral",
+       "teks": "Gw pengguna iphone 13 bisa pindah lensa kamera di 4K 30fps kamera utama ke ultrawide",
+       "video": "qeWDOOfbIbI"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 3,
+     "net": 2,
+     "neg": 1,
+     "n": 6,
+     "skor": 0.182,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Gw pengguna iphone 13 bisa pindah lensa kamera di 4K 30fps kamera utama ke ultrawide",
+       "video": "qeWDOOfbIbI"
+      },
+      {
+       "label": "Negatif",
+       "teks": "Buat tahun 2026 ip13 udh sangat tidak cocok, krna sering lag, smg bisa ganti 17pro thn dpn 🤗",
+       "video": "J7tekVDdUhg"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 2,
+     "net": 3,
+     "neg": 1,
+     "n": 6,
+     "skor": 0.091,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Emg rezeki nomplok bgt kmaren dpet ip13 ibox 128 diharga 5jt. Unit mulussss bgt",
+       "video": "J7tekVDdUhg"
+      },
+      {
+       "label": "Negatif",
+       "teks": "Awal2 pake android spek dan harga saat itu balance skrg harga mahal tp spek biasa aja kecuali untuk flag ship udah beda cerita top semua. Nyoba2 pindah ke ip 13 dulu nyaman dan suk...",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Redmi Note 17 Pro Max",
+   "tingkat": "Model",
+   "merek": "Xiaomi Group",
+   "total_opini": 4,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 3,
+     "neg": 0,
+     "n": 3,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Watching it on Redmi note 17 pro max 12gb 256gb version feel like my battery anxiety will be over for life 😌😌😌😊😊😊",
+       "video": "KNdbPdZjlOU"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 1,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "AQ beli redmi note 17 pro max di HK dgn hrg 3300 hkd ya dpt hrg diskon hrg asli 3600 ini dpt gift kranjang blanja earphone sama kabel USB tmbhn",
+       "video": "0WTTYcWTJ4A"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Galaxy S26",
+   "tingkat": "Model",
+   "merek": "Samsung",
+   "total_opini": 4,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 2,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "those with poor battery performance like s26 , 17 , 17 air Did you choose that intentionally?",
+       "video": "KNdbPdZjlOU"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Performa": {
+     "pos": 1,
+     "net": 1,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.143,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "kalo mau di kompare gk imbang harus ny sama S26 nnti dengan chipset elite gen 5 nya",
+       "video": "qeWDOOfbIbI"
+      },
+      {
+       "label": "Netral",
+       "teks": "those with poor battery performance like s26 , 17 , 17 air Did you choose that intentionally?",
+       "video": "KNdbPdZjlOU"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    }
+   }
+  },
+  {
+   "nama": "Poco X6",
+   "tingkat": "Model",
+   "merek": "Xiaomi Group",
+   "total_opini": 8,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 2,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Masih kena libas spek nya sama POCO X6 5G harga 3.5jt an dulu. kecuali baterai",
+       "video": "0WTTYcWTJ4A"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Performa": {
+     "pos": 1,
+     "net": 1,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.143,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "I mean .. my 5100mAh Poco X6 holds me for (according to AccuBattery app):\nFrom 100% --> 3% 68h and a total screentime of 4h 20m (mind you with GPS/Bluetooth always enabled because ...",
+       "video": "KNdbPdZjlOU"
+      },
+      {
+       "label": "Netral",
+       "teks": "Ngelihat hp sekarang bersyukur banget sempat ambil Poco x6 5g dapat ram 12 GB di harga 3,4 😅",
+       "video": "0WTTYcWTJ4A"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 4,
+     "neg": 0,
+     "n": 4,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Masih kena libas spek nya sama POCO X6 5G harga 3.5jt an dulu. kecuali baterai",
+       "video": "0WTTYcWTJ4A"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Poco X8 Pro",
+   "tingkat": "Model",
+   "merek": "Xiaomi Group",
+   "total_opini": 6,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 2,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Would be a great phone if they used Snap 7 Gen 4 instead of that crap Snap 6 Gen 5. On top of that the price of that phone is absurd at the moment, Poco X8 Pro Max is better in lit...",
+       "video": "KNdbPdZjlOU"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 4,
+     "neg": 0,
+     "n": 4,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Alhamdulillah dapet poco x8 pro pas first sale.\nVarian 8/512 dapet di harga 4,6 jt",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Redmi Note 17",
+   "tingkat": "Model",
+   "merek": "Xiaomi Group",
+   "total_opini": 3,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 2,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Redmi Note 17 PM is a power bank. 😊",
+       "video": "KNdbPdZjlOU"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 1,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "WTF, dipakein frame kamera model begitu malah jadi keliatan murahan 😂\nHello Xiaomi Redmi Note 17, masih aja pake dagu? Diketawain sama Kingfinix tuuhh 😂",
+       "video": "0WTTYcWTJ4A"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    }
+   }
+  },
+  {
+   "nama": "iPhone 16 Pro Max",
+   "tingkat": "Model",
+   "merek": "Apple",
+   "total_opini": 5,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 2,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Bang, adaptor yang bagus buat iphone 16 Pro max yg berapa watt? Dan merk apa?",
+       "video": "vfp0r-lFm1k"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 1,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "First time aku beli IP kemarin pas event 3.3😅. Itu belinya hasil dari ngeaffiliate. Nabung dlu bbrpa bulan. Dlu pas aku kerja formal boro2 minat beli IP. HP 3jutaan aja ckup. Aku n...",
+       "video": "vfp0r-lFm1k"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 1,
+     "net": 0,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.167,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "punyaku ip 16 promax 256 beli hanpir satu taun ini, cma beli di luar pas kerja di korea, imei di daftarkan di indonesia buar reg kartu indonesia allhamdulilah sampe skrng msih lanc...",
+       "video": "vfp0r-lFm1k"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 1,
+     "net": 0,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.167,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Baru seminggu ambil iPhone 16 ProMax yang harga nya lagi worthed banget di harga 23.449.000 yang versi 512GB.. saya kurang suka dengan 17 promax karena 16 promax masih Titanium sih...",
+       "video": "J7tekVDdUhg"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "iPhone 17",
+   "tingkat": "Model",
+   "merek": "Apple",
+   "total_opini": 11,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 2,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "nanya ko iphone 17 best model jika menggunakan adaptor 30 watt support gak ya ?",
+       "video": "qeWDOOfbIbI"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 1,
+     "net": 2,
+     "neg": 0,
+     "n": 3,
+     "skor": 0.125,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Mending bikin video iphone 17 vs 16 pro",
+       "video": "qeWDOOfbIbI"
+      },
+      {
+       "label": "Netral",
+       "teks": "Udh liat compare vidio nya Masih bngung ip 17 basic atau 25 ultra. Blm pernh pake ip. Smsungtrs . Mau upgrade",
+       "video": "qeWDOOfbIbI"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Harga": {
+     "pos": 2,
+     "net": 3,
+     "neg": 1,
+     "n": 6,
+     "skor": 0.091,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "dpt ip17 cuma 14jt, kirain bakal naik gila disini",
+       "video": "UOTT4xudY70"
+      },
+      {
+       "label": "Negatif",
+       "teks": "Maret 2026 baru berani ambil ip17 karena nunggu turun harga😅",
+       "video": "qeWDOOfbIbI"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Galaxy A57",
+   "tingkat": "Model",
+   "merek": "Samsung",
+   "total_opini": 3,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 1,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "For me this kind of battery would last a week even the galaxy a57 last 2 days",
+       "video": "KNdbPdZjlOU"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 1,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Menonton video ini dengan Samsung Galaxy A57 5G 😂😂",
+       "video": "ybK8FRc6nlw"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 1,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Samsung a57 saya dapat di harga 5.6 juta yang 8/256 😂",
+       "video": "ybK8FRc6nlw"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Galaxy S25",
+   "tingkat": "Model",
+   "merek": "Samsung",
+   "total_opini": 14,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 1,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Lu masih mikirin BH Bh BH, no s25 sdh launcing no gimick2",
+       "video": "pzzRk-dun7g"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 3,
+     "neg": 0,
+     "n": 3,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Untuk video potret/cinematic di S25 apakah sudah bisa di zoom ketika sedang merekan Bang?",
+       "video": "qeWDOOfbIbI"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 2,
+     "net": 0,
+     "neg": 1,
+     "n": 3,
+     "skor": 0.125,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "4:28 gw pake S25 pake main game lumayan aga lama kaya setrikaan 😭",
+       "video": "qeWDOOfbIbI"
+      },
+      {
+       "label": "Negatif",
+       "teks": "Bang coba sekarang ngetest gamenya main roblox, khususnya map fish it, salon atau dance2 semacamnya, sebagai pengguna S25 ku akuin panasnya berlebih, ampe harus lepas case, padahal...",
+       "video": "qeWDOOfbIbI"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 7,
+     "neg": 0,
+     "n": 7,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Gua dapet second like new s25 12/256 di harga 10.000",
+       "video": "qeWDOOfbIbI"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Vivo V70",
+   "tingkat": "Model",
+   "merek": "Vivo/iQOO",
+   "total_opini": 4,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 1,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "si vivo v70 bknnya udh bypass charging ya bang?",
+       "video": "LRE_WGxHpGs"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 1,
+     "net": 1,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.143,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Nonton ini pke vivo v70 sofar untuk kamera bagus ditambah tuningan zeiss yg hasil kamera nya berasa estetik gitu apalagi di mode potrait. Trus soal speker bgi yg bilang cempreng ba...",
+       "video": "LRE_WGxHpGs"
+      },
+      {
+       "label": "Netral",
+       "teks": "Di sini adakah yg pakai vivo v70? Unt foto video Apakah lebih unggul? Boleh dong sharing.. Trmakasih 🙏😊..",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 1,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Vivo v70 ml rata kanan. Kayak setrika",
+       "video": "LRE_WGxHpGs"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    }
+   }
+  },
+  {
+   "nama": "iPhone 14 Pro",
+   "tingkat": "Model",
+   "merek": "Apple",
+   "total_opini": 4,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 1,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "gw punya teman keras kepala pakai iphone 14 pro tapi pakai power bank murahaan kacau",
+       "video": "pzzRk-dun7g"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Harga": {
+     "pos": 2,
+     "net": 1,
+     "neg": 0,
+     "n": 3,
+     "skor": 0.25,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Punya budget diatas 10 mending beli 17T atau ke ip 14pro ya??",
+       "video": "UOTT4xudY70"
+      },
+      {
+       "label": "Netral",
+       "teks": "Harga iphone 14 pro brp skrg",
+       "video": "J7tekVDdUhg"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "iPhone 16",
+   "tingkat": "Model",
+   "merek": "Apple",
+   "total_opini": 17,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 1,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "ak bru pke ip 16 biasa 5 bulan tapi bh udh 91 gara” pke pb, kalau up tuker tambah ke 16 pro worth it ga bg? atau pakai aja 16 biasa ini",
+       "video": "vfp0r-lFm1k"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 1,
+     "net": 5,
+     "neg": 0,
+     "n": 6,
+     "skor": 0.091,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Semoga ngga ada suap suapan lagi di pemerintahan buat iPhone 16 ini.\n\nDan untuk kebanyakan  konsumen yg beli iPhone itu Krn model kamera belakangnya yg ciri khas biar makenya pede ...",
+       "video": "vfp0r-lFm1k"
+      },
+      {
+       "label": "Netral",
+       "teks": "Siapa yang nonton video ini karena mau beli iPhone 16 😅",
+       "video": "vfp0r-lFm1k"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 1,
+     "net": 0,
+     "neg": 2,
+     "n": 3,
+     "skor": -0.125,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Kamera iphone 16 videonya di settingan 60 fps (HD dan 4K) tp malah flickering, itu aman gak sih kak? \n\nApa ini kelemahan untuk product iphone 16 ini?",
+       "video": "vfp0r-lFm1k"
+      },
+      {
+       "label": "Negatif",
+       "teks": "panas g iphone 16, yg 15 panas",
+       "video": "vfp0r-lFm1k"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 1,
+     "net": 5,
+     "neg": 1,
+     "n": 7,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Di menit ke 15.30 kata bang David baut yg cari uang di perkontenan lebih suggest buat upgrade ke ip 16,, tp konten saya Blum menghasilkan bang,, viewnya sepi subscriber nya lambat,...",
+       "video": "vfp0r-lFm1k"
+      },
+      {
+       "label": "Negatif",
+       "teks": "Setelah IP 16 resmi dijual di indo apakah IP generasinya sebelumnya akan turun harga ?",
+       "video": "vfp0r-lFm1k"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "iPhone 11",
+   "tingkat": "Model",
+   "merek": "Apple",
+   "total_opini": 12,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 3,
+     "neg": 1,
+     "n": 4,
+     "skor": -0.111,
+     "contoh": [
+      {
+       "label": "Negatif",
+       "teks": "Ka kalau battery health ip 11 udah 69 persen better ganti batre atau gak?\n\nStatus nya udh butuu service gitu di settingannya. Kerasa sih memang jd lebih cepet habis batrenya, terut...",
+       "video": "pzzRk-dun7g"
+      },
+      {
+       "label": "Netral",
+       "teks": "Gw beli ip 11 dr thn 2022 buka segel sampe skrg BH di angka 96 . Ngecharge pas di angka 80%",
+       "video": "pzzRk-dun7g"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 3,
+     "neg": 0,
+     "n": 3,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "1:09 itu iPhone yakin ga salah settingan makanya ga bisa pindah lensa? dari iPhone 11 aja udah bisa switch lensa kok di resolusi 4K 30FPS wkwkwk, yakali iPhone terbaru kagak bisa😂",
+       "video": "qeWDOOfbIbI"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 1,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "1:09 itu iPhone yakin ga salah settingan makanya ga bisa pindah lensa? dari iPhone 11 aja udah bisa switch lensa kok di resolusi 4K 30FPS wkwkwk, yakali iPhone terbaru kagak bisa😂",
+       "video": "qeWDOOfbIbI"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 4,
+     "neg": 0,
+     "n": 4,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "User ip 11 di taun 2025😂 di era gempuran base model 15 yg harga nya terjun bebas dan samsek blm pengen ganti😆",
+       "video": "vfp0r-lFm1k"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Galaxy S25 Ultra",
+   "tingkat": "Model",
+   "merek": "Samsung",
+   "total_opini": 7,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 0,
+     "neg": 1,
+     "n": 1,
+     "skor": -0.167,
+     "contoh": [
+      {
+       "label": "Negatif",
+       "teks": "Setelah kandidat X300 Pro, S25 Ultra,  Find X9Pro, gw meminang Find9Pro, alasan UI, AI, Fitur, batere badak, kamera mungkin kalah, tapi cm kalah tipis ma X300 Pro. All Rounder Find...",
+       "video": "bwF7wNZjhLE"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 3,
+     "neg": 0,
+     "n": 3,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Ijin nanya bang david... Kan ini video dibuat sebelum samsung s25 ultra muncul... Nah kalo dibandingin atau di duelin mereka berdua dibandin dr segi foto dan video menang mana..??",
+       "video": "vfp0r-lFm1k"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 1,
+     "net": 1,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.143,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "14:18 secara experience pake S25 Ultra memang All rounder si. Kamera video 4k 60fps Bitrate High dan HDR nya bagus.",
+       "video": "bwF7wNZjhLE"
+      },
+      {
+       "label": "Netral",
+       "teks": "Setelah kandidat X300 Pro, S25 Ultra,  Find X9Pro, gw meminang Find9Pro, alasan UI, AI, Fitur, batere badak, kamera mungkin kalah, tapi cm kalah tipis ma X300 Pro. All Rounder Find...",
+       "video": "bwF7wNZjhLE"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 1,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Setelah kandidat X300 Pro, S25 Ultra,  Find X9Pro, gw meminang Find9Pro, alasan UI, AI, Fitur, batere badak, kamera mungkin kalah, tapi cm kalah tipis ma X300 Pro. All Rounder Find...",
+       "video": "bwF7wNZjhLE"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "iPhone 15",
+   "tingkat": "Model",
+   "merek": "Apple",
+   "total_opini": 24,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 4,
+     "neg": 2,
+     "n": 6,
+     "skor": -0.182,
+     "contoh": [
+      {
+       "label": "Negatif",
+       "teks": "Ipad 11 sudah 8 bulan, Bh masih 100 persen. iPhone 15 basic mau mendekati satu bulan BH sudah turun 1 persen jadi 100 persen, charger pakai charger original iPad… iPhone 15 udah up...",
+       "video": "pzzRk-dun7g"
+      },
+      {
+       "label": "Netral",
+       "teks": "ip15 saya manufacture maret 2025, first used juni 25, baru pake sebulan bh jadi 98% pdhl cc baru 42 aja, kocak emang ipong",
+       "video": "pzzRk-dun7g"
+      }
+     ]
+    },
+    "Kamera": {
+     "pos": 1,
+     "net": 4,
+     "neg": 0,
+     "n": 5,
+     "skor": 0.1,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Sudah punya Ip15 basic, tapi mau beli lagi buat kebutuhan Dokumentasi video wisata jadi enak beli yg mana bang ?",
+       "video": "J7tekVDdUhg"
+      },
+      {
+       "label": "Netral",
+       "teks": "ip 15 aja bisa pindah2 lensa ultrawide 4K 60fps kok ini 4k 30fps ga bisa pindah2 lensa",
+       "video": "qeWDOOfbIbI"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 1,
+     "net": 2,
+     "neg": 1,
+     "n": 4,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "ip 15 aja bisa pindah2 lensa ultrawide 4K 60fps kok ini 4k 30fps ga bisa pindah2 lensa",
+       "video": "qeWDOOfbIbI"
+      },
+      {
+       "label": "Negatif",
+       "teks": "Saya user pake Ip 15 128GB, 4 bulan pemakaian BH-nya 98% dengan cycle count 195.\nPenggunaan kerja 8-9 jam di outdoor panas2an dengan pemakaian aplikasi WeChat, WA, Photo/Video, wak...",
+       "video": "pzzRk-dun7g"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 1,
+     "net": 6,
+     "neg": 2,
+     "n": 9,
+     "skor": -0.071,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "bingung ni untuk sekarang, mending ip 15 256 garansi on sampe 2027 di 11.5jt  atau 14 pro 256 pemakaian setahun lebih 11jtan juga ya?",
+       "video": "J7tekVDdUhg"
+      },
+      {
+       "label": "Negatif",
+       "teks": "Baru smalem adek gw beli ip 15 yg 258. Ko harganya mahal bnget ya, 16jt sekian + adaptor. Apa skrng udh naik lagi kahh??",
+       "video": "J7tekVDdUhg"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Vivo X80 Pro",
+   "tingkat": "Model",
+   "merek": "Vivo/iQOO",
+   "total_opini": 3,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Kamera": {
+     "pos": 1,
+     "net": 0,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.167,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Kakak² semua, seperti biasa. Mau ganti HP dr Vivo X80 Pro. Nyari yg kamera bagus, performance ok. Harga ga mahal² amat. Apa ya?",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 1,
+     "net": 0,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.167,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Kakak² semua, seperti biasa. Mau ganti HP dr Vivo X80 Pro. Nyari yg kamera bagus, performance ok. Harga ga mahal² amat. Apa ya?",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 0,
+     "neg": 1,
+     "n": 1,
+     "skor": -0.167,
+     "contoh": [
+      {
+       "label": "Negatif",
+       "teks": "Kakak² semua, seperti biasa. Mau ganti HP dr Vivo X80 Pro. Nyari yg kamera bagus, performance ok. Harga ga mahal² amat. Apa ya?",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Poco F7 Ultra",
+   "tingkat": "Model",
+   "merek": "Xiaomi Group",
+   "total_opini": 10,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Kamera": {
+     "pos": 1,
+     "net": 1,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.143,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "sampah semua.. cm satu yg juara POCO f7 ULTRA Rp 8jt an paling juara. dapet lensa tele 50MP kamera juara. in this economy Ram 16/512gb , lu tau yg micro SD 512GB kecepatan tinggi h...",
+       "video": "ybK8FRc6nlw"
+      },
+      {
+       "label": "Netral",
+       "teks": "Saya user Poco F7 Ultra, iklannya saya sdh gk nemu. Lalu yg istimewah kamera telenya bisa macro... Jd mampu liat tulisan yg ada di komponen elektronik kecil. Jd sangat membantu seh...",
+       "video": "ybK8FRc6nlw"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 1,
+     "net": 1,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.143,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "sampah semua.. cm satu yg juara POCO f7 ULTRA Rp 8jt an paling juara. dapet lensa tele 50MP kamera juara. in this economy Ram 16/512gb , lu tau yg micro SD 512GB kecepatan tinggi h...",
+       "video": "ybK8FRc6nlw"
+      },
+      {
+       "label": "Netral",
+       "teks": "Poco f7 ultra flash sale 7,2 ram16",
+       "video": "ybK8FRc6nlw"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 1,
+     "net": 5,
+     "neg": 0,
+     "n": 6,
+     "skor": 0.091,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Poco f7 ultra turun lagi bang wkwkw akhir bulan kemarin dapet harga 7.999 alias 8 juta . puas bgt pakenya",
+       "video": "ybK8FRc6nlw"
+      },
+      {
+       "label": "Netral",
+       "teks": "dapat diskon poco f7 ultra 12/256 di harga 7jt",
+       "video": "ybK8FRc6nlw"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "iPhone 14",
+   "tingkat": "Model",
+   "merek": "Apple",
+   "total_opini": 9,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Kamera": {
+     "pos": 1,
+     "net": 3,
+     "neg": 0,
+     "n": 4,
+     "skor": 0.111,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Emang udh bagus bgt siiih iPhone 14 tuh.. apalagi video nya udh keren , alhamdulillah udh ganti ke 14 pro max dan lebih bagus lg ternyata video nya ❤",
+       "video": "J7tekVDdUhg"
+      },
+      {
+       "label": "Netral",
+       "teks": "Nonton vidio ini pakai iphone 14😊",
+       "video": "J7tekVDdUhg"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 5,
+     "neg": 0,
+     "n": 5,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Beli di bulan maret kmrn ip 14 8jt di ibox shopee ❤",
+       "video": "J7tekVDdUhg"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Galaxy A07",
+   "tingkat": "Model",
+   "merek": "Samsung",
+   "total_opini": 14,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 2,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "kaka kaka semua mau nanya dong ditempat aku harga Samsung a07 ram4/128 diharga 2.5jt aku butuh untuk pengguna sehari\" sama laporan kerja ngisi link, foto foto laporan, atau mending...",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 3,
+     "neg": 1,
+     "n": 4,
+     "skor": -0.111,
+     "contoh": [
+      {
+       "label": "Negatif",
+       "teks": "Tapi samsung A07 saya baru pake 6 bulan udh lemot",
+       "video": "UOTT4xudY70"
+      },
+      {
+       "label": "Netral",
+       "teks": "kaka kaka semua mau nanya dong ditempat aku harga Samsung a07 ram4/128 diharga 2.5jt aku butuh untuk pengguna sehari\" sama laporan kerja ngisi link, foto foto laporan, atau mending...",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 2,
+     "net": 6,
+     "neg": 0,
+     "n": 8,
+     "skor": 0.154,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Pov Samsung a07 makin mehong tembus 2 juta lebih bahkan varian terendahnya aja, lihat aja website resmi Samsung wkwkwk",
+       "video": "UOTT4xudY70"
+      },
+      {
+       "label": "Netral",
+       "teks": "tahun kemaren beli Samsung a07 pas masih harga 1,3jt, tahun sekarang udah rusak biaya ganti lcd tembus 1jt, ini belum termasuk pengecekan semuanya sih",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Poco X7 Pro",
+   "tingkat": "Model",
+   "merek": "Xiaomi Group",
+   "total_opini": 5,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 2,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "poco x7 pro beli di mana ya yang original seperti di video?",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 0,
+     "neg": 1,
+     "n": 1,
+     "skor": -0.167,
+     "contoh": [
+      {
+       "label": "Negatif",
+       "teks": "Aq pake poco x7 pro kenapa gampang panas tapi ya buat liat yt aja",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 2,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "november 2025 lihat hp poco x7 pro di sini,..dan langsung beli diharga 4,350jt,.. sekarang harganya diatas 4,5 juta. signifikan naiknya",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Redmi Note 15",
+   "tingkat": "Model",
+   "merek": "Xiaomi Group",
+   "total_opini": 4,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 2,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Versi downgrade dari Redmi note 15 😂\n\nTerutama kamera 108mp jadi 50mp\nKamera depan 20mp jadi 16mp.\n\nFitur Camera macro juga dihilangkan😅😅😅😅",
+       "video": "0WTTYcWTJ4A"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 2,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Redmi note 15 udh 3.5 jt aja",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Galaxy A52",
+   "tingkat": "Model",
+   "merek": "Samsung",
+   "total_opini": 3,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 1,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Gue masih setia pake samsung a52 s jadul gue yg di beli taun 2021 awal alhamdulillah masih bisa bersaing dengan hp jaman sekarang ,meskipun kekalahan nya cuman di chipset sama kame...",
+       "video": "J7tekVDdUhg"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 1,
+     "net": 1,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.143,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Samsung A52 4G saya masih lancar",
+       "video": "ybK8FRc6nlw"
+      },
+      {
+       "label": "Netral",
+       "teks": "Gue masih setia pake samsung a52 s jadul gue yg di beli taun 2021 awal alhamdulillah masih bisa bersaing dengan hp jaman sekarang ,meskipun kekalahan nya cuman di chipset sama kame...",
+       "video": "J7tekVDdUhg"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    }
+   }
+  },
+  {
+   "nama": "Xiaomi 17T",
+   "tingkat": "Model",
+   "merek": "Xiaomi Group",
+   "total_opini": 8,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 0,
+     "neg": 1,
+     "n": 1,
+     "skor": -0.167,
+     "contoh": [
+      {
+       "label": "Negatif",
+       "teks": "sudah ketemu bug xiaomi 17T, camera lag , terutama di  selfie cam, padahal kondisi tdk overheat,😅,semoga cuma masalah software",
+       "video": "LRE_WGxHpGs"
+      }
+     ]
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 1,
+     "neg": 1,
+     "n": 2,
+     "skor": -0.143,
+     "contoh": [
+      {
+       "label": "Negatif",
+       "teks": "sudah ketemu bug xiaomi 17T, camera lag , terutama di  selfie cam, padahal kondisi tdk overheat,😅,semoga cuma masalah software",
+       "video": "LRE_WGxHpGs"
+      },
+      {
+       "label": "Netral",
+       "teks": "kemarin dapet xiaomi 17t harga 7,5 ram 12/256 worth ittt bgt",
+       "video": "ybK8FRc6nlw"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 2,
+     "net": 3,
+     "neg": 0,
+     "n": 5,
+     "skor": 0.2,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Pas banget xiaomi 17T gua dapat 6,9jt baru seminggu pakai karna BU 😅",
+       "video": "LRE_WGxHpGs"
+      },
+      {
+       "label": "Netral",
+       "teks": "Checkout Xiaomi 17T + gift headphone Neo cuma 7,6 juta wkwk",
+       "video": "LRE_WGxHpGs"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Poco F7",
+   "tingkat": "Model",
+   "merek": "Xiaomi Group",
+   "total_opini": 7,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Performa": {
+     "pos": 1,
+     "net": 0,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.167,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Poco F7 dong, slh 1 hp gaming terbaik, harga murah meriah pula dl, ga nyampe 7jt, eh skrng udh soldout",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 1,
+     "net": 5,
+     "neg": 0,
+     "n": 6,
+     "skor": 0.091,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Poco F7 dong, slh 1 hp gaming terbaik, harga murah meriah pula dl, ga nyampe 7jt, eh skrng udh soldout",
+       "video": "UOTT4xudY70"
+      },
+      {
+       "label": "Netral",
+       "teks": "Dapet poco f7 limited edition di harga 4,5",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Redmi Note 14",
+   "tingkat": "Model",
+   "merek": "Xiaomi Group",
+   "total_opini": 6,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Performa": {
+     "pos": 1,
+     "net": 2,
+     "neg": 0,
+     "n": 3,
+     "skor": 0.125,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Beli bekas redmi note 14 5g ram 12/526 harga 1 jt, mantap poll😊",
+       "video": "0WTTYcWTJ4A"
+      },
+      {
+       "label": "Netral",
+       "teks": "njir the real downgred, redminote 14 4g aja masih dikasih 8gb ram real, ini mentok di 6gb ram wkkwwkwk",
+       "video": "0WTTYcWTJ4A"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 1,
+     "net": 2,
+     "neg": 0,
+     "n": 3,
+     "skor": 0.125,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Beli bekas redmi note 14 5g ram 12/526 harga 1 jt, mantap poll😊",
+       "video": "0WTTYcWTJ4A"
+      },
+      {
+       "label": "Netral",
+       "teks": "wkwk naik 2 kali lipat ya semenjak harga hp naik, sebelum tahun 2026 saya beli redmi note 14 4g 8/256 itu cuman 2.6 JT aja, bersyukur beli sebelum harga naik",
+       "video": "0WTTYcWTJ4A"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Galaxy A17",
+   "tingkat": "Model",
+   "merek": "Samsung",
+   "total_opini": 4,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 2,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "kok hp naik ya? disana samsung a17 2,7 cek syopi barusan 3,7 untuk ram yg sama",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 2,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Setelah nonton sana sini Akhir nya  bugdet 4 juta ambil samsung A17 4G,,,karna buat anak sekolah,,,semoga bisa awet 5 tahun kedepean",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Redmi Note 15 Pro",
+   "tingkat": "Model",
+   "merek": "Xiaomi Group",
+   "total_opini": 3,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 1,
+     "neg": 0,
+     "n": 1,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Untuk harga Redmi note 15 pro 5g ram 8 sekarang hargaya Uda 6,2 JT an ini Masi worth it ga",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    },
+    "Harga": {
+     "pos": 1,
+     "net": 1,
+     "neg": 0,
+     "n": 2,
+     "skor": 0.143,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "Makin kesini memang harga hp makin ga ngotak, akhirnya pilih beli rilisan awal tahun ini saja yaitu Redmi Note 15 Pro varian 8/256 dapet di harga 4,7jt 😄 yang harganya waras dan sp...",
+       "video": "0WTTYcWTJ4A"
+      },
+      {
+       "label": "Netral",
+       "teks": "Untuk harga Redmi note 15 pro 5g ram 8 sekarang hargaya Uda 6,2 JT an ini Masi worth it ga",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Infinix Hot 60 Pro",
+   "tingkat": "Model",
+   "merek": "Infinix/Tecno",
+   "total_opini": 5,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Harga": {
+     "pos": 1,
+     "net": 3,
+     "neg": 1,
+     "n": 5,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Positif",
+       "teks": "gw dapet infinix hot 60 pro 8/256 di harga 2.2jt, kaget liat 11:54, kok bisa jadi 3.4 gilak",
+       "video": "UOTT4xudY70"
+      },
+      {
+       "label": "Negatif",
+       "teks": "Ko Infinix hot 60 pro mahal ya? Bukannya 2.3",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "nama": "Infinix Note 60",
+   "tingkat": "Model",
+   "merek": "Infinix/Tecno",
+   "total_opini": 4,
+   "aspek": {
+    "Baterai": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Kamera": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Performa": {
+     "pos": 0,
+     "net": 0,
+     "neg": 0,
+     "n": 0,
+     "skor": 0.0,
+     "contoh": []
+    },
+    "Harga": {
+     "pos": 0,
+     "net": 4,
+     "neg": 0,
+     "n": 4,
+     "skor": 0.0,
+     "contoh": [
+      {
+       "label": "Netral",
+       "teks": "Alhamdulillah kebeli Infinix note 60 pas event 9.9, meskipun ada kendala pas mengisi saldo shopee pay diaplikasi, buat temen-temen yang mau beli hp semangat ya menghadapi lonjakan ...",
+       "video": "UOTT4xudY70"
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

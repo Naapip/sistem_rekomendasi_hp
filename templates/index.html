@@ -1,0 +1,380 @@
+<title>RekomenHP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: alat dua kolom (panel prioritas | daftar Top-N) + panel detail; di ponsel menumpuk, detail jadi lembar bawah */
+:root {
+  --bg: #f3f4f1;
+  --surface: #ffffff;
+  --ink: #17201d;
+  --muted: #5d6a65;
+  --line: #d9ddd6;
+  --accent: #0f7a63;
+  --accent-soft: #dcefe8;
+  --pos: #1f8a5b;
+  --neu: #a7b0ab;
+  --neg: #c4473a;
+  --chip: #eceee9;
+  --shadow: 0 1px 2px rgba(23,32,29,.06), 0 6px 18px rgba(23,32,29,.06);
+  --f-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111614; --surface: #1a211e; --ink: #e8ece9; --muted: #9aa7a1; --line: #2c3632;
+    --accent: #3fc29f; --accent-soft: #1d3a32; --pos: #45b97f; --neu: #5d6964; --neg: #e3675a;
+    --chip: #232c28; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 18px rgba(0,0,0,.25); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111614; --surface: #1a211e; --ink: #e8ece9; --muted: #9aa7a1; --line: #2c3632;
+  --accent: #3fc29f; --accent-soft: #1d3a32; --pos: #45b97f; --neu: #5d6964; --neg: #e3675a;
+  --chip: #232c28; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 18px rgba(0,0,0,.25); color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.5; }
+.wrap { max-width: 1240px; margin: 0 auto; padding-inline: 16px; padding-block: 0 40px; }
+header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--bg); border-bottom: 1px solid var(--line); }
+.topin { max-width: 1240px; margin: 0 auto; padding: 12px 16px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.brand { font-family: var(--f-display); font-weight: 700; font-size: 22px; letter-spacing: -.01em; display: flex; align-items: baseline; gap: 8px; }
+.brand small { font-family: var(--f-body); font-weight: 500; font-size: 12px; color: var(--muted); letter-spacing: .02em; }
+nav.tabs { display: flex; gap: 4px; margin-left: auto; }
+nav.tabs button { font: 500 14px var(--f-body); color: var(--muted); background: none; border: 0; padding: 8px 12px; border-radius: 8px; cursor: pointer; }
+nav.tabs button[aria-selected="true"] { color: var(--ink); background: var(--chip); }
+nav.tabs button:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.lede { padding-block: 22px 18px; display: flex; flex-wrap: wrap; gap: 8px 28px; align-items: end; }
+.lede h1 { font-family: var(--f-display); font-weight: 700; font-size: clamp(24px, 3.2vw, 34px); line-height: 1.12; margin: 0; max-width: 22ch; text-wrap: balance; }
+.lede p { margin: 0; color: var(--muted); max-width: 60ch; }
+
+.grid { display: grid; grid-template-columns: 300px minmax(0, 1fr) 360px; gap: 18px; align-items: start; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px; }
+.side { position: sticky; top: 76px; display: grid; gap: 18px; }
+.lbl { font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; }
+.presets { display: flex; flex-wrap: wrap; gap: 6px; }
+.chipb { font: 500 13px var(--f-body); background: var(--chip); color: var(--ink); border: 1px solid transparent; padding: 5px 11px; border-radius: 999px; cursor: pointer; }
+.chipb[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--ink); }
+.slider { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; align-items: center; margin-top: 12px; }
+.slider label { font-weight: 500; font-size: 14px; }
+.slider output { font-family: var(--f-mono); font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.slider input { grid-column: 1 / -1; width: 100%; accent-color: var(--accent); }
+.seg { display: grid; grid-template-columns: 1fr 1fr; background: var(--chip); border-radius: 9px; padding: 3px; }
+.seg button { font: 500 14px var(--f-body); border: 0; background: none; color: var(--muted); padding: 7px; border-radius: 7px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: var(--shadow); }
+.minrow { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 12px; font-size: 14px; }
+.minrow input { width: 70px; font: 500 14px var(--f-mono); padding: 5px 8px; border: 1px solid var(--line); border-radius: 7px; background: var(--surface); color: var(--ink); }
+.note { font-size: 12.5px; color: var(--muted); margin: 10px 0 0; }
+
+.listhead { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+.listhead h2 { font-family: var(--f-display); font-size: 20px; margin: 0; }
+.listhead span { color: var(--muted); font-size: 13px; }
+.cards { display: grid; gap: 10px; }
+.card { display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; gap: 6px 14px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; cursor: pointer; text-align: left; width: 100%; font: inherit; color: inherit; }
+.card:hover { border-color: var(--accent); }
+.card[aria-current="true"] { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent) inset; }
+.rank { font-family: var(--f-display); font-weight: 700; font-size: 24px; color: var(--muted); text-align: center; }
+.card[aria-current="true"] .rank { color: var(--accent); }
+.nm { font-weight: 600; font-size: 16px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.meta { font-size: 12.5px; color: var(--muted); }
+.pill { font-size: 11px; font-weight: 600; letter-spacing: .02em; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.pill.Kuat { border-color: var(--pos); color: var(--pos); }
+.pill.Cukup { border-color: var(--muted); }
+.pill.Indikatif { border-style: dashed; }
+.final { text-align: right; }
+.final b { display: block; font-family: var(--f-mono); font-size: 22px; font-variant-numeric: tabular-nums; }
+.final small { font-size: 11px; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
+.aspects { grid-column: 2 / -1; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-top: 4px; }
+.asp { font-size: 12px; color: var(--muted); display: grid; gap: 3px; min-width: 0; }
+.asp .row { display: flex; justify-content: space-between; gap: 6px; }
+.asp .row span:last-child { font-family: var(--f-mono); color: var(--ink); font-variant-numeric: tabular-nums; }
+.div { position: relative; height: 6px; background: var(--chip); border-radius: 3px; overflow: hidden; }
+.div::after { content: ""; position: absolute; left: 50%; top: -2px; bottom: -2px; width: 1px; background: var(--muted); opacity: .6; }
+.div i { position: absolute; top: 0; bottom: 0; }
+.div i.p { left: 50%; background: var(--pos); }
+.div i.n { right: 50%; background: var(--neg); }
+.empty { padding: 28px; text-align: center; color: var(--muted); border: 1px dashed var(--line); border-radius: 12px; }
+
+.detail { position: sticky; top: 76px; max-height: calc(100vh - 96px); overflow: auto; }
+.detail h3 { font-family: var(--f-display); font-size: 22px; margin: 0 0 2px; }
+.dsum { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin: 10px 0 16px; padding: 10px 12px; border-radius: 10px; background: var(--accent-soft); }
+.dsum b { font-family: var(--f-mono); font-size: 20px; }
+.dasp { border-top: 1px solid var(--line); padding-block: 12px; }
+.dasp h4 { margin: 0 0 6px; font-size: 14px; display: flex; justify-content: space-between; gap: 8px; }
+.dasp h4 span { font-family: var(--f-mono); font-weight: 500; }
+.stack { display: flex; height: 10px; border-radius: 5px; overflow: hidden; background: var(--chip); }
+.stack i { display: block; }
+.stack .p { background: var(--pos); } .stack .u { background: var(--neu); } .stack .n { background: var(--neg); }
+.counts { display: flex; gap: 12px; font-size: 12px; color: var(--muted); margin-top: 5px; font-variant-numeric: tabular-nums; }
+.counts i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 4px; }
+.quote { margin: 8px 0 0; padding: 8px 10px; border-left: 3px solid var(--neu); background: var(--chip); border-radius: 0 8px 8px 0; font-size: 13px; }
+.quote.Positif { border-left-color: var(--pos); } .quote.Negatif { border-left-color: var(--neg); }
+.quote footer { font-size: 11.5px; color: var(--muted); margin-top: 3px; display: flex; gap: 8px; }
+.quote a { color: var(--accent); }
+.closeb { display: none; }
+
+/* Bandingkan */
+.cmp-pick { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.tablewrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; min-width: 520px; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); font-size: 14px; }
+th { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 600; }
+td.num { font-family: var(--f-mono); }
+td.best { color: var(--accent); font-weight: 600; }
+.twocol { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px; }
+.prose { max-width: 68ch; }
+.prose p { margin: 0 0 10px; }
+.formula { font-family: var(--f-mono); background: var(--chip); padding: 10px 12px; border-radius: 8px; overflow-x: auto; white-space: nowrap; }
+
+@media (max-width: 1100px) {
+  .grid { grid-template-columns: 280px minmax(0, 1fr); }
+  .detail { grid-column: 1 / -1; position: static; max-height: none; }
+}
+@media (max-width: 760px) {
+  nav.tabs { margin-left: 0; width: 100%; overflow-x: auto; }
+  .grid, .twocol { grid-template-columns: minmax(0, 1fr); }
+  .side { display: contents; }
+  .p-bobot { order: 1; } .results { order: 2; } .p-tampil { order: 3; }
+  #sliders { display: grid; grid-template-columns: 1fr 1fr; column-gap: 16px; }
+  .aspects { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .card { grid-template-columns: 28px minmax(0, 1fr) auto; padding: 12px; }
+  .detail { position: fixed; left: 0; right: 0; bottom: 0; top: auto; z-index: 30; max-height: 82vh; border-radius: 16px 16px 0 0; padding-bottom: calc(18px + env(safe-area-inset-bottom, 0px)); box-shadow: 0 -10px 30px rgba(0,0,0,.18); }
+  .closeb { display: inline-block; float: right; font: 500 13px var(--f-body); background: var(--chip); color: var(--ink); border: 0; border-radius: 999px; padding: 5px 12px; cursor: pointer; }
+}
+@media (prefers-reduced-motion: no-preference) { .card { transition: border-color .15s; } }
+</style>
+
+<header class="top"><div class="topin">
+  <div class="brand">RekomenHP <small>ABSA komentar YouTube</small></div>
+  <nav class="tabs" role="tablist">
+    <button role="tab" id="tab-rek" aria-selected="true" data-v="rek">Rekomendasi</button>
+    <button role="tab" id="tab-cmp" aria-selected="false" data-v="cmp">Bandingkan</button>
+    <button role="tab" id="tab-data" aria-selected="false" data-v="data">Tentang Data</button>
+  </nav>
+</div></header>
+
+<main class="wrap">
+  <section id="v-rek">
+    <div class="lede">
+      <h1>Smartphone yang paling cocok dengan prioritas Anda</h1>
+      <p>Skor dihitung dari sentimen <span id="nkom"></span> komentar YouTube yang diklasifikasi IndoBERT per aspek: baterai, kamera, performa, dan harga.</p>
+    </div>
+    <div class="grid">
+      <aside class="side">
+        <div class="panel p-bobot">
+          <p class="lbl">Profil cepat</p>
+          <div class="presets" id="presets"></div>
+          <p class="lbl" style="margin-top:18px">Bobot prioritas</p>
+          <div id="sliders"></div>
+          <p class="note">Bobot dinormalisasi otomatis sehingga totalnya 100%.</p>
+        </div>
+        <div class="panel p-tampil">
+          <p class="lbl">Tampilkan</p>
+          <div class="seg" id="lvl">
+            <button id="lvl-merek" data-l="Merek" aria-pressed="true">Merek</button>
+            <button id="lvl-model" data-l="Model" aria-pressed="false">Model</button>
+          </div>
+          <div class="minrow"><label for="minop">Minimal total opini</label><input id="minop" type="number" min="1" max="300" value="30"></div>
+          <p class="lbl" style="margin-top:18px">Filter merek</p>
+          <div class="presets" id="brands"></div>
+        </div>
+      </aside>
+      <section class="results">
+        <div class="listhead"><h2>Top 5</h2><span id="lhint"></span></div>
+        <div class="cards" id="cards"></div>
+        <p class="note">Batang tiap aspek: skor −0,5 (kiri, negatif) sampai +0,5 (kanan, positif). Keyakinan: Kuat N ≥ 10, Cukup 5–9, Indikatif 3–4.</p>
+      </section>
+      <aside class="panel detail" id="detail" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <section id="v-cmp" hidden>
+    <div class="lede">
+      <h1>Bandingkan per aspek</h1>
+      <p>Pilih dua sampai empat merek atau model. Nilai tertinggi di setiap baris ditandai.</p>
+    </div>
+    <div class="panel">
+      <div class="seg" id="cmplvl" style="max-width:260px;margin-bottom:14px">
+        <button id="cmp-merek" data-l="Merek" aria-pressed="true">Merek</button>
+        <button id="cmp-model" data-l="Model" aria-pressed="false">Model</button>
+      </div>
+      <div class="cmp-pick" id="cmppick"></div>
+      <div class="tablewrap"><table id="cmptab"></table></div>
+    </div>
+  </section>
+
+  <section id="v-data" hidden>
+    <div class="lede"><h1>Tentang data dan model</h1><p>Angka di aplikasi ini sama dengan keluaran notebook penelitian (data_ui.json).</p></div>
+    <div class="twocol">
+      <div class="panel prose">
+        <p class="lbl">Sumber dan alur</p>
+        <p id="srcp"></p>
+        <p>Setiap komentar diberi label per aspek (Positif, Negatif, Netral, atau tidak dibahas). Nama merek dan model diambil dari teks asli dengan pola regex; komentar yang menyebut lebih dari satu produk tidak dihitung.</p>
+        <p class="lbl" style="margin-top:16px">Rumus skor</p>
+        <p class="formula">Skor aspek = (Positif − Negatif) / (N + 5)</p>
+        <p class="formula">Skor akhir = Σ bobot aspek × Skor aspek</p>
+        <p>Konstanta 5 meredam produk dengan sedikit opini. Aspek tanpa opini diberi skor 0.</p>
+      </div>
+      <div class="panel">
+        <p class="lbl">Kinerja model pada data uji</p>
+        <div class="tablewrap"><table id="evtab"></table></div>
+        <p class="note">IndoBERT dipakai untuk rekomendasi karena macro-F1 lebih tinggi di semua aspek; uji McNemar menunjukkan selisihnya signifikan (p &lt; 0,001).</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+const DATA = __DATA__;
+const A = DATA.aspek;
+const PRESET = {
+  "Seimbang": [25, 25, 25, 25],
+  "Pecinta kamera": [20, 50, 20, 10],
+  "Gamer": [30, 10, 50, 10],
+  "Hemat": [25, 10, 15, 50]
+};
+const DEFMIN = { Merek: 30, Model: 5 };
+const st = { w: [25, 25, 25, 25], lvl: "Merek", min: 30, brands: new Set(), sel: null, preset: "Seimbang" };
+const fmt = (x, d = 3) => (x >= 0 ? "+" : "−") + Math.abs(x).toFixed(d).replace(".", ",");
+const keyakinan = n => n >= 10 ? "Kuat" : n >= 5 ? "Cukup" : "Indikatif";
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const $ = id => document.getElementById(id);
+
+document.getElementById("nkom").textContent = DATA.jumlah_komentar.toLocaleString("id-ID");
+
+function skorAkhir(p) {
+  const tot = st.w.reduce((a, b) => a + b, 0) || 1;
+  return A.reduce((s, a, i) => s + (st.w[i] / tot) * p.aspek[a].skor, 0);
+}
+function ranked() {
+  return DATA.produk
+    .filter(p => p.tingkat === st.lvl && p.total_opini >= st.min && (st.brands.size === 0 || st.brands.has(p.merek)))
+    .map(p => ({ p, s: skorAkhir(p) }))
+    .sort((x, y) => y.s - x.s || y.p.total_opini - x.p.total_opini);
+}
+function divBar(v) {
+  const w = Math.min(Math.abs(v) / 0.5, 1) * 50;
+  return `<div class="div"><i class="${v >= 0 ? "p" : "n"}" style="width:${w}%"></i></div>`;
+}
+
+function renderControls() {
+  $("presets").innerHTML = Object.keys(PRESET).map(k =>
+    `<button class="chipb" id="pr-${k.replace(/\s/g, "")}" aria-pressed="${st.preset === k}" data-k="${k}">${k}</button>`).join("");
+  $("presets").querySelectorAll("button").forEach(b => b.onclick = () => {
+    st.preset = b.dataset.k; st.w = PRESET[b.dataset.k].slice(); syncSliders(); render();
+  });
+  $("sliders").innerHTML = A.map((a, i) =>
+    `<div class="slider"><label for="w-${a}">${a}</label><output id="o-${a}"></output>
+     <input id="w-${a}" type="range" min="0" max="100" step="5" value="${st.w[i]}"></div>`).join("");
+  A.forEach((a, i) => $("w-" + a).oninput = e => { st.w[i] = +e.target.value; st.preset = null; syncSliders(false); render(); });
+  const merek = [...new Set(DATA.produk.filter(p => p.tingkat === "Merek").map(p => p.nama))].sort();
+  $("brands").innerHTML = merek.map(m => `<button class="chipb" aria-pressed="false" data-m="${esc(m)}">${esc(m)}</button>`).join("");
+  $("brands").querySelectorAll("button").forEach(b => b.onclick = () => {
+    const m = b.dataset.m; st.brands.has(m) ? st.brands.delete(m) : st.brands.add(m);
+    b.setAttribute("aria-pressed", st.brands.has(m)); render();
+  });
+  $("lvl").querySelectorAll("button").forEach(b => b.onclick = () => {
+    st.lvl = b.dataset.l; st.min = DEFMIN[st.lvl]; $("minop").value = st.min; st.sel = null;
+    $("lvl").querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b)); render();
+  });
+  $("minop").oninput = e => { const v = parseInt(e.target.value, 10); if (v > 0) { st.min = v; render(); } };
+  syncSliders();
+}
+function syncSliders(setVals = true) {
+  const tot = st.w.reduce((a, b) => a + b, 0) || 1;
+  A.forEach((a, i) => { if (setVals) $("w-" + a).value = st.w[i]; $("o-" + a).textContent = Math.round(st.w[i] / tot * 100) + "%"; });
+  $("presets").querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b.dataset.k === st.preset));
+}
+
+function render() {
+  const r = ranked();
+  $("lhint").textContent = `${r.length} ${st.lvl.toLowerCase()} memenuhi minimal ${st.min} opini`;
+  if (!r.length) {
+    $("cards").innerHTML = `<div class="empty">Belum ada ${st.lvl.toLowerCase()} dengan minimal ${st.min} opini. Turunkan batas minimal opini atau hapus filter merek.</div>`;
+    $("detail").innerHTML = ""; $("detail").hidden = true; return;
+  }
+  if (!st.sel || !r.slice(0, 5).some(x => x.p.nama === st.sel)) st.sel = window.innerWidth > 760 ? r[0].p.nama : null;
+  $("cards").innerHTML = r.slice(0, 5).map((x, i) => {
+    const p = x.p;
+    return `<button class="card" data-n="${esc(p.nama)}" aria-current="${p.nama === st.sel}">
+      <div class="rank">${i + 1}</div>
+      <div style="min-width:0"><div class="nm">${esc(p.nama)} <span class="pill ${keyakinan(p.total_opini)}">${keyakinan(p.total_opini)}</span></div>
+        <div class="meta">${p.tingkat === "Model" ? esc(p.merek) + " · " : ""}${p.total_opini} opini</div></div>
+      <div class="final"><small>Skor akhir</small><b>${fmt(x.s)}</b></div>
+      <div class="aspects">${A.map(a => `<div class="asp"><div class="row"><span>${a}</span><span>${fmt(p.aspek[a].skor, 2)}</span></div>${divBar(p.aspek[a].skor)}</div>`).join("")}</div>
+    </button>`;
+  }).join("");
+  $("cards").querySelectorAll(".card").forEach(c => c.onclick = () => { st.sel = c.dataset.n; render(); });
+  renderDetail();
+}
+
+function renderDetail() {
+  const d = $("detail");
+  const p = DATA.produk.find(x => x.nama === st.sel && x.tingkat === st.lvl);
+  if (!p) { d.hidden = true; d.innerHTML = ""; return; }
+  d.hidden = false;
+  d.innerHTML = `<button class="closeb" id="closed">Tutup</button>
+    <p class="lbl">${p.tingkat}${p.tingkat === "Model" ? " · " + esc(p.merek) : ""}</p><h3>${esc(p.nama)}</h3>
+    <div class="dsum"><span>Skor akhir dengan bobot saat ini</span><b>${fmt(skorAkhir(p))}</b></div>
+    ${A.map(a => {
+      const s = p.aspek[a], n = s.n || 1;
+      const q = s.contoh.map(c => `<blockquote class="quote ${c.label}">${esc(c.teks)}<footer><span>${c.label}</span><a href="https://www.youtube.com/watch?v=${encodeURIComponent(c.video)}" target="_blank" rel="noopener">video sumber ↗</a></footer></blockquote>`).join("");
+      return `<div class="dasp"><h4>${a} <span>${fmt(s.skor, 2)} · N ${s.n}</span></h4>
+        ${s.n ? `<div class="stack"><i class="p" style="width:${s.pos / n * 100}%"></i><i class="u" style="width:${s.net / n * 100}%"></i><i class="n" style="width:${s.neg / n * 100}%"></i></div>
+        <div class="counts"><span><i style="background:var(--pos)"></i>Positif ${s.pos}</span><span><i style="background:var(--neu)"></i>Netral ${s.net}</span><span><i style="background:var(--neg)"></i>Negatif ${s.neg}</span></div>${q}`
+        : `<p class="note" style="margin:0">Belum ada opini untuk aspek ini (skor 0).</p>`}</div>`;
+    }).join("")}`;
+  const cb = $("closed"); if (cb) cb.onclick = () => { st.sel = null; d.hidden = true; render(); };
+}
+
+/* Bandingkan */
+const cmp = { lvl: "Merek", pick: new Set(["Apple", "Samsung", "Xiaomi Group", "Vivo/iQOO"]) };
+function renderCmp() {
+  const list = DATA.produk.filter(p => p.tingkat === cmp.lvl && p.total_opini >= (cmp.lvl === "Merek" ? 10 : 5))
+    .sort((a, b) => b.total_opini - a.total_opini);
+  $("cmppick").innerHTML = list.map(p => `<button class="chipb" aria-pressed="${cmp.pick.has(p.nama)}" data-n="${esc(p.nama)}">${esc(p.nama)} <span style="color:var(--muted)">${p.total_opini}</span></button>`).join("");
+  $("cmppick").querySelectorAll("button").forEach(b => b.onclick = () => {
+    const n = b.dataset.n;
+    if (cmp.pick.has(n)) cmp.pick.delete(n); else if (cmp.pick.size < 4) cmp.pick.add(n);
+    renderCmp();
+  });
+  const sel = list.filter(p => cmp.pick.has(p.nama));
+  if (sel.length < 2) { $("cmptab").innerHTML = `<tr><td class="note">Pilih minimal dua ${cmp.lvl.toLowerCase()}.</td></tr>`; return; }
+  const row = (lab, f, num = true) => {
+    const vals = sel.map(f); const best = num ? Math.max(...vals) : null;
+    return `<tr><th scope="row">${lab}</th>${vals.map(v => `<td class="num ${num && v === best ? "best" : ""}">${num ? fmt(v, 3) : v}</td>`).join("")}</tr>`;
+  };
+  $("cmptab").innerHTML = `<thead><tr><th></th>${sel.map(p => `<th>${esc(p.nama)}</th>`).join("")}</tr></thead><tbody>
+    ${A.map(a => row(a, p => p.aspek[a].skor)).join("")}
+    ${row("Skor akhir (bobot rekomendasi)", p => skorAkhir(p))}
+    ${row("Total opini", p => p.total_opini, false)}
+    ${row("Keyakinan", p => keyakinan(p.total_opini), false)}</tbody>`;
+}
+$("cmplvl").querySelectorAll("button").forEach(b => b.onclick = () => {
+  cmp.lvl = b.dataset.l; cmp.pick = new Set(DATA.produk.filter(p => p.tingkat === cmp.lvl).sort((a, b) => b.total_opini - a.total_opini).slice(0, 3).map(p => p.nama));
+  $("cmplvl").querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b)); renderCmp();
+});
+
+/* Tentang data */
+function renderData() {
+  const nM = DATA.produk.filter(p => p.tingkat === "Merek").length, nm = DATA.produk.filter(p => p.tingkat === "Model").length;
+  $("srcp").textContent = `${DATA.jumlah_komentar.toLocaleString("id-ID")} komentar dari 10 video ulasan smartphone di YouTube. Model sentimen: ${DATA.model_sentimen}. Aplikasi memuat ${nM} merek dan ${nm} model dengan minimal 3 opini.`;
+  const ev = DATA.evaluasi;
+  $("evtab").innerHTML = `<thead><tr><th>Aspek</th><th>Akurasi BiLSTM</th><th>F1 BiLSTM</th><th>Akurasi IndoBERT</th><th>F1 IndoBERT</th></tr></thead><tbody>` +
+    A.map(a => {
+      const b = ev.find(e => e.Model === "BiLSTM" && e.Aspek === a), i = ev.find(e => e.Model === "IndoBERT" && e.Aspek === a);
+      const pc = v => (v * 100).toFixed(1).replace(".", ",") + "%", f = v => v.toFixed(3).replace(".", ",");
+      return `<tr><td>${a}</td><td class="num">${pc(b.Akurasi)}</td><td class="num">${f(b["Macro-F1"])}</td><td class="num">${pc(i.Akurasi)}</td><td class="num best">${f(i["Macro-F1"])}</td></tr>`;
+    }).join("") + `</tbody>`;
+}
+
+/* Tab */
+document.querySelectorAll("nav.tabs button").forEach(b => b.onclick = () => {
+  document.querySelectorAll("nav.tabs button").forEach(x => x.setAttribute("aria-selected", x === b));
+  ["rek", "cmp", "data"].forEach(v => $("v-" + v).hidden = v !== b.dataset.v);
+});
+if (["cmp", "data"].includes(location.hash.slice(1))) $("tab-" + location.hash.slice(1)).click();
+
+renderControls(); render(); renderCmp(); renderData();
+</script>
